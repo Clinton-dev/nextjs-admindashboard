@@ -1,6 +1,12 @@
-import SideNav from '@/app/ui/dashboard/sidenav';
+import SideNav from '@/app/sidenav';
+import { Metadata } from 'next';
 
 export const experimental_ppr = true;
+
+
+export const metadata: Metadata = {
+    title: 'Home',
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
